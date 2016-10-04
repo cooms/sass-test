@@ -1,0 +1,26 @@
+$font-stack: Helvetica, sans-serif;
+$primary-color: red;
+$secondary-color: steelblue;
+$light-shadow: 1px 1px 20px black;
+
+nav {
+  text-shadow: $light-shadow;
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  li {
+    display: inline-block;
+    color: $primary-color;
+  }
+
+  a {
+    color: $primary-color;
+    display: block;
+    padding: 6px 12px;
+    text-decoration: none;
+  }
+}

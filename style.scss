@@ -1,7 +1,60 @@
+@import "nav";
+
 $font-stack: Helvetica, sans-serif;
 $primary-color: red;
+$secondary-color: steelblue;
+$light-shadow: 1px 1px 20px black;
 
 body {
   font: 100% $font-stack;
   color: $primary-color;
+  background-color: $secondary-color;
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+.box { @include border-radius(25%); }
+
+.message {
+  border: 10px solid #ccc;
+  padding: 10px;
+  color: #333;
+}
+
+.success {
+  @extend .message;
+  border-color: green;
+}
+
+.error {
+  @extend .message;
+  border-color: red;
+}
+
+.warning {
+  @extend .message;
+  border: 20px solid orange;
+
+}
+
+/* Operators */
+.container {
+  width: 100%;
+}
+
+article[role="main"] {
+  float: left;
+  width: 600px / 960px * 100%;
+  border: 1px solid red;
+}
+
+aside[role="complementary"] {
+  float: right;
+  width: 300px / 960px * 100%;
+  border: 1px solid blue;
 }

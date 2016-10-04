@@ -1,5 +1,55 @@
+nav {
+  text-shadow: 1px 1px 20px black; }
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+  nav li {
+    display: inline-block;
+    color: red; }
+  nav a {
+    color: red;
+    display: block;
+    padding: 6px 12px;
+    text-decoration: none; }
+
 body {
   font: 100% Helvetica, sans-serif;
-  color: red; }
+  color: red;
+  background-color: steelblue; }
+
+.box {
+  -webkit-border-radius: 25%;
+  -moz-border-radius: 25%;
+  -ms-border-radius: 25%;
+  border-radius: 25%; }
+
+.message, .success, .error, .warning {
+  border: 10px solid #ccc;
+  padding: 10px;
+  color: #333; }
+
+.success {
+  border-color: green; }
+
+.error {
+  border-color: red; }
+
+.warning {
+  border: 20px solid orange; }
+
+/* Operators */
+.container {
+  width: 100%; }
+
+article[role="main"] {
+  float: left;
+  width: 62.5%;
+  border: 1px solid red; }
+
+aside[role="complementary"] {
+  float: right;
+  width: 31.25%;
+  border: 1px solid blue; }
 
 /*# sourceMappingURL=output.css.map */
