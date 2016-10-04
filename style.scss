@@ -5,6 +5,10 @@ $primary-color: red;
 $secondary-color: steelblue;
 $light-shadow: 1px 1px 20px black;
 
+// media query variables
+$break-small: 500px;
+$break-large: 1200px;
+
 body {
   font: 100% $font-stack;
   color: $primary-color;
@@ -18,7 +22,17 @@ body {
           border-radius: $radius;
 }
 
-.box { @include border-radius(25%); }
+.box {
+  @include border-radius(25%);
+  @media screen and (max-width: $break-small) {
+    width: 100px;
+    float: none;
+  }
+  @media screen and (min-width: $break-large) {
+    float: right;
+    width: 300px;
+  }
+}
 
 .message {
   border: 10px solid #ccc;

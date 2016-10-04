@@ -23,6 +23,14 @@ body {
   -moz-border-radius: 25%;
   -ms-border-radius: 25%;
   border-radius: 25%; }
+  @media screen and (max-width: 500px) {
+    .box {
+      width: 100px;
+      float: none; } }
+  @media screen and (min-width: 1200px) {
+    .box {
+      float: right;
+      width: 300px; } }
 
 .message, .success, .error, .warning {
   border: 10px solid #ccc;
